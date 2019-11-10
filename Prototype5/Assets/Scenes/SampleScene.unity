@@ -1411,9 +1411,13 @@ MonoBehaviour:
   objectsLeftToRight:
   - {fileID: 4996366517501761009, guid: 44f2bbed254d1444697c9b6a3cbe9cb4, type: 3}
   - {fileID: 1716425870803024544, guid: 2d9ccd0ca67592342a762d4b412f053e, type: 3}
+  - {fileID: 8818291449256893378, guid: a3814ba4b49340d469018399e4689390, type: 3}
+  - {fileID: 3338128117916823743, guid: 4e6c3bcf1eb04f1439f3fe4ec2b0b9b4, type: 3}
   objectsRightToLeft:
   - {fileID: 2412986112541779465, guid: 7ed520ef7ef27c040a391729bdc0a379, type: 3}
   - {fileID: 4482155642030254312, guid: bfe239e827be5e743a2b28191a1cfcf6, type: 3}
+  - {fileID: 4098088002829072165, guid: bd109d312a4f3994eaa54675c1a012d0, type: 3}
+  - {fileID: 5528646632926400830, guid: 27215630758961646bb14b746c71333f, type: 3}
   spawnPos:
   - {fileID: 513501200}
   - {fileID: 1265412241}
