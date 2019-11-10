@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 341783579744561263}
   - component: {fileID: 864920446885043396}
   - component: {fileID: 6381086278630895082}
-  - component: {fileID: 256098991337455661}
+  - component: {fileID: 644831114802863853}
   m_Layer: 0
   m_Name: YellowBlock
   m_TagString: Burning
@@ -130,7 +130,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &256098991337455661
+--- !u!114 &644831114802863853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4670535955526742210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da284a943471d9a4eb1862d7025fa38c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f47e500cfbb8574e897beb005f90802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   initialSpeed: 5
@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3174432386086649082}
   m_Layer: 0
-  m_Name: Burning Truck
+  m_Name: Burning Truck Right
   m_TagString: Burning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

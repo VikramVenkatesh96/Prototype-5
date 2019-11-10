@@ -5,7 +5,7 @@ using UnityEngine;
 public class burningObjectCounter : MonoBehaviour
 {
 
-    private float objMissedCount = 0f;
+    private static float objMissedCount = 0f;
 
     public GameObject[] burningObjs;
     public GameObject[] extinguishedObjs;
