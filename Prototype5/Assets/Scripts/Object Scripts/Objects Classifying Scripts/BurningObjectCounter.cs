@@ -8,7 +8,7 @@ public class BurningObjectCounter : MonoBehaviour
     private static float objMissedCount = 0f;
 
     public GameObject[] burningObjs;
-    public GameObject[] extinguishedObjs;
+    //public GameObject[] extinguishedObjs;
 
     // Start is called before the first frame update
     void Start()

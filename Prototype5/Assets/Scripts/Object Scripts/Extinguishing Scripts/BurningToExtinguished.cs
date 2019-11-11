@@ -81,6 +81,8 @@ public class BurningToExtinguished : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<Vehicle>().extinguishedSprite;
+            gameObject.tag = "Extinguished";
+            gameObject.transform.parent.gameObject.tag = "Extinguished";
             isExtinguished = true;
         }
         else {
