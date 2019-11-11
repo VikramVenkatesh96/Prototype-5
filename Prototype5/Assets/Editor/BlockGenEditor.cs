@@ -9,7 +9,6 @@ public class BlockGenEditor : Editor
     public override void OnInspectorGUI()
     {
         BlockGen generator = (BlockGen)target;
-
         if (DrawDefaultInspector())
         {
             if (generator.autoUpdate) {

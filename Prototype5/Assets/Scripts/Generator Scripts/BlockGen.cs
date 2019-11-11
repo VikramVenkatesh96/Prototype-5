@@ -5,7 +5,8 @@ using UnityEngine;
 public class BlockGen : MonoBehaviour
 {
     public bool autoUpdate;
-    public int numberOfRows;
+    [SerializeField]
+    private int numberOfRows;
     public int minNumberPerRow;
     public int maxNumberPerRow;
     public Sprite[] blockTypes;
