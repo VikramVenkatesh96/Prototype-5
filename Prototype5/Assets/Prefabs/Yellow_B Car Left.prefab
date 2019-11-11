@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8750773055569207351}
   - component: {fileID: 8928286757867996397}
   - component: {fileID: 1642980660383621603}
+  - component: {fileID: 8537998447542335139}
   - component: {fileID: 7818280519608894262}
   - component: {fileID: 4291593888914125800}
   - component: {fileID: 7591853894350947810}
@@ -103,7 +104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 527662453
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -8648649929935784838, guid: ef103e29eacd12b46919d1962a065a29,
     type: 3}
@@ -164,6 +165,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8537998447542335139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497131198547707844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57324fafea0611b43926f66c2c4af76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  timeToExtinguish: 3
+  extinguishedSprite: {fileID: 21300000, guid: 591bd5ea000cd2e43a3dadbd6b062b14, type: 3}
+  onFireSprite: {fileID: -8648649929935784838, guid: ef103e29eacd12b46919d1962a065a29,
+    type: 3}
 --- !u!114 &7818280519608894262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,14 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c21eb73c0c162d41818fe1b2ea3ac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manExtinguishingTime: 1
-  carExtinguishingTime: 3
-  truckExtinguishingTime: 5
-  extinguishedObjs:
-  - {fileID: 8818291449256893378, guid: a3814ba4b49340d469018399e4689390, type: 3}
-  - {fileID: 4098088002829072165, guid: bd109d312a4f3994eaa54675c1a012d0, type: 3}
-  - {fileID: 1716425870803024544, guid: 2d9ccd0ca67592342a762d4b412f053e, type: 3}
-  - {fileID: 4482155642030254312, guid: bfe239e827be5e743a2b28191a1cfcf6, type: 3}
 --- !u!95 &7591853894350947810
 Animator:
   serializedVersion: 3

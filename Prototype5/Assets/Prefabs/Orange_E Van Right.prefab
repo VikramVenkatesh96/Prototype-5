@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4619329377779346292}
   m_Layer: 0
-  m_Name: Orange_E Truck Right
+  m_Name: Orange_E Van Right
   m_TagString: Extinguished
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8675829763890736462}
   - component: {fileID: 1568388610243362072}
   - component: {fileID: 7005079906825980104}
+  - component: {fileID: 1672288819723797303}
   - component: {fileID: 3314434691762052848}
   m_Layer: 0
   m_Name: orange_Big_Right (1)
@@ -101,7 +102,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 527662453
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 95b2e5b3f82e3fc4e8c138eef84acfc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -161,6 +162,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1672288819723797303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504511925838302968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57324fafea0611b43926f66c2c4af76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  extinguishedSprite: {fileID: 21300000, guid: 95b2e5b3f82e3fc4e8c138eef84acfc7, type: 3}
+  onFireSprite: {fileID: -9070072893300625656, guid: 7b686b063a9d05c4ebc51a93ff0e503b,
+    type: 3}
 --- !u!114 &3314434691762052848
 MonoBehaviour:
   m_ObjectHideFlags: 0

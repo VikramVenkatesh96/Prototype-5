@@ -7,7 +7,6 @@ public class Draggable : MonoBehaviour
 {
     private Vector3 screenPoint;
     private Vector3 offset;
-
     #region Mouse Drag
 
     void OnMouseDown()
