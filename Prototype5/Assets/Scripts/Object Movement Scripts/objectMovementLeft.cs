@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class objectMovementLeft : MonoBehaviour
+public class ObjectMovementLeft : MonoBehaviour
 {
 
     public float initialSpeed = 5.0f;

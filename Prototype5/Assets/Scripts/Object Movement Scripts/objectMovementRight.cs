@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class objectMovementRight : MonoBehaviour
+public class ObjectMovementRight : MonoBehaviour
 {
     public float initialSpeed = 5.0f;
     private Rigidbody2D obj;

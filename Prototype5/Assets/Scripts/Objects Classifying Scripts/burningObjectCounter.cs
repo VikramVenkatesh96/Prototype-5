@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class burningObjectCounter : MonoBehaviour
+public class BurningObjectCounter : MonoBehaviour
 {
 
     private static float objMissedCount = 0f;
