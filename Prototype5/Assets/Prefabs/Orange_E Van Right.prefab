@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7005079906825980104}
   - component: {fileID: 1672288819723797303}
   - component: {fileID: 3314434691762052848}
+  - component: {fileID: 4536343109777641452}
   m_Layer: 0
   m_Name: orange_Big_Right (1)
   m_TagString: Extinguished
@@ -125,7 +126,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -193,3 +194,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialSpeed: {x: 5, y: 0}
   acceleration: {x: 0, y: 0}
+--- !u!114 &4536343109777641452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504511925838302968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a381a83a0dbd904db12cd9108e7d19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

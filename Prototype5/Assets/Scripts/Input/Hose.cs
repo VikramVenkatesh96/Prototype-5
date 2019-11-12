@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Hose : MonoBehaviour
 {
-    //private GameObject water;
+    private BoxCollider2D water;
     private Animator waterAnimator;
     void Start()
     {
-        /*water = gameObject.transform.GetChild(0).gameObject;
-        water.SetActive(false);*/
+        water = gameObject.transform.GetChild(0).gameObject.GetComponent<BoxCollider2D>();
+        water.enabled = false;
         waterAnimator = transform.GetChild(0).gameObject.GetComponent<Animator>();
     }
 
@@ -20,12 +20,12 @@ public class Hose : MonoBehaviour
 
     void OnMouseDown()
     {
-        //water.SetActive(true);
+        water.enabled = true;
         waterAnimator.SetBool("waterActive", true);
     }
     void OnMouseUp()
     {
-        //water.SetActive(false);
+        water.enabled = false;
         waterAnimator.SetBool("waterActive", false);
     }
 }
