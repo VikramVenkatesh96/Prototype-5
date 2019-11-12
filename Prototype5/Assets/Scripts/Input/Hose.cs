@@ -15,7 +15,7 @@ public class Hose : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(waterAnimator.GetBool("waterActive"));
+        //Debug.Log(waterAnimator.GetBool("waterActive"));
     }
 
     void OnMouseDown()
