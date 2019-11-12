@@ -13,6 +13,8 @@ public class Score_manager : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("Highscore", 0);
+        
         // Finding text objects to link to variables
         Score = GameObject.Find("Score").GetComponent<Text>();
         Highscore = GameObject.Find("Highscore").GetComponent<Text>();
@@ -53,7 +55,7 @@ public class Score_manager : MonoBehaviour
         //{
         //    Present_score--;
         //}
-        Score.text = Present_score.ToString();
+        Score.text = "Score : " + Present_score.ToString();
     }
 
     void All_debugs()
