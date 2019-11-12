@@ -151,6 +151,7 @@ MonoBehaviour:
   extinguishedSprite: {fileID: 21300000, guid: 1329c8dc8a3d3ec42a025f267809a081, type: 3}
   onFireSprite: {fileID: -3640552460054241874, guid: 37e92900b4a69964a99a45a0c493bd1b,
     type: 3}
+  vehicleScore: 30
 --- !u!114 &7792741241623641990
 MonoBehaviour:
   m_ObjectHideFlags: 0

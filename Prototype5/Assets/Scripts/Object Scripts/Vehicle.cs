@@ -10,4 +10,5 @@ public class Vehicle : MonoBehaviour
     public float timeToExtinguish = 0.0f;
     public Sprite extinguishedSprite;
     public Sprite onFireSprite;
+    public int vehicleScore;
 }
