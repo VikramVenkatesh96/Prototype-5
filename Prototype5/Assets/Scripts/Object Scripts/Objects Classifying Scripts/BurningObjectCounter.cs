@@ -27,7 +27,7 @@ public class BurningObjectCounter : MonoBehaviour
             if (burningObjs[i].tag == obj.gameObject.tag)
             {
                 objMissedCount++;
-                Debug.Log("obj missed: " + objMissedCount);
+                //Debug.Log("obj missed: " + objMissedCount);
                 break;
             }
         }
