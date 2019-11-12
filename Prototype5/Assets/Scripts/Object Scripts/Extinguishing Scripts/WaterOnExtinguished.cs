@@ -8,11 +8,6 @@ public class WaterOnExtinguished : MonoBehaviour
     ObjectMovementLeft accelerationLeft;
     //to decelrate it in right direction decrease accelerationRight
     ObjectMovementRight accelerationRight;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -33,11 +28,5 @@ public class WaterOnExtinguished : MonoBehaviour
             Destroy(gameObject.transform.parent.gameObject);
             Destroy(collider.gameObject.transform.parent.gameObject);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

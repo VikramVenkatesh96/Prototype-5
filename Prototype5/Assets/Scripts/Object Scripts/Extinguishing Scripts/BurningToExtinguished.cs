@@ -8,7 +8,7 @@ public class BurningToExtinguished : MonoBehaviour
 
     bool isWater = false;
     bool isExtinguished = false;
-    private static float countSavedVehicles;
+    private static float countSavedVehicles = 0;
     private const float maxSavesPerLevel = 10;
     private bool switchLevel = false;
     Vehicle vehicleType;
