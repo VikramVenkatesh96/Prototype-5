@@ -20,7 +20,7 @@ public class Score_manager : MonoBehaviour
         // Playerprefs to store/save values
         PlayerPrefs.GetInt("Highscore", 0);
 
-        Score.text = "SCORE : " + Present_score.ToString();
+        Score.text = Present_score.ToString();
         Highscore.text = "HIGHSCORE : " + PlayerPrefs.GetInt("Highscore").ToString();
     }
 
@@ -44,15 +44,16 @@ public class Score_manager : MonoBehaviour
     // call function when score changes only
     void Score_increment_manager()
     {
-        if(Input.GetKeyDown(KeyCode.I))
-        {
-            Present_score++;
-        }
-        else if(Input.GetKeyDown(KeyCode.K))
-        {
-            Present_score--;
-        }
-        Score.text = "SCORE : " + Present_score.ToString();
+        Present_score = BurningToExtinguished.Score;
+        //if(Input.GetKeyDown(KeyCode.I))
+        //{
+        //    Present_score++;
+        //}
+        //else if(Input.GetKeyDown(KeyCode.K))
+        //{
+        //    Present_score--;
+        //}
+        Score.text = Present_score.ToString();
     }
 
     void All_debugs()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BurningToExtinguished : MonoBehaviour
 {
+    public static int Score;
+
     bool isWater = false;
     bool isExtinguished = false;
     //public float manExtinguishingTime = 1.0f;
@@ -83,6 +85,8 @@ public class BurningToExtinguished : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<Vehicle>().extinguishedSprite;
             gameObject.tag = "Extinguished";
             gameObject.transform.parent.gameObject.tag = "Extinguished";
+            // add score here
+            Score = Score + 10;
             isExtinguished = true;
         }
         else {

@@ -11,9 +11,12 @@ public class Death_counter_manager : MonoBehaviour
     public Image Death_bar_filler_image;
     public Text Death_counter_filled_text;
 
+    private float Bar_controler;
+
     void Start()
     {
         Death_bar_filler_image.fillAmount = 0.0f;
+        Bar_controler = 0.1f;
 
         Fill_amount = 0.1f;
         Fill_incrementor = 0.1f;
@@ -32,7 +35,16 @@ public class Death_counter_manager : MonoBehaviour
     //inputs for temporary usage
     void Death_count_manager_script()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+
+        Death_bar_filler_image.fillAmount = BurningObjectCounter.objMissedCount * Bar_controler;
+
+        if(Death_bar_filler_image.fillAmount >= 1)
+        {
+            Death_counter_filled_text.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        /*if (Input.GetKeyDown(KeyCode.U))
         {
             Death_bar_filler_image.fillAmount = Fill_amount + Fill_incrementor;
             Fill_amount = Death_bar_filler_image.fillAmount;
@@ -42,7 +54,7 @@ public class Death_counter_manager : MonoBehaviour
         {
             Death_bar_filler_image.fillAmount = Fill_amount + Fill_decreamentor;
             Fill_amount = Death_bar_filler_image.fillAmount;
-        }
+        }*/
     }
 
     void All_degug_here()
