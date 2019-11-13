@@ -10,6 +10,8 @@ public class ObjectSpawner : MonoBehaviour
     public List<GameObject> objectsRightToLeft;
     public List<GameObject> spawnPos;
     public float respawnTime;
+    public float delayBetweenLevels;
+    public bool startWave = true;
     private Vector2 screenBounds;
 
     // Start is called before the first frame update
@@ -19,7 +21,7 @@ public class ObjectSpawner : MonoBehaviour
 
         StartCoroutine(objectsRToLWave());
 
-        StartCoroutine(delayBetweenWaves());
+        StartCoroutine(delayBetweenLAndRWaves());
 
         StartCoroutine(objectsLToRWave());
     }
@@ -49,13 +51,22 @@ public class ObjectSpawner : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSeconds(respawnTime);
-            spawnObjectsRightToLeft();
+            if(startWave)
+            {
+                yield return new WaitForSeconds(respawnTime);
+                spawnObjectsRightToLeft();
+            }
+            else
+            {
+                yield return new WaitForSeconds(delayBetweenLevels);
+                startWave = true;
+            }
+            
         }
         
     }
 
-    IEnumerator delayBetweenWaves()
+    IEnumerator delayBetweenLAndRWaves()
     {
         yield return new WaitForSeconds(2f);
 
@@ -67,8 +78,16 @@ public class ObjectSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(respawnTime);
-            spawnObjectsLeftToRight();
+            if (startWave)
+            {
+                yield return new WaitForSeconds(respawnTime);
+                spawnObjectsLeftToRight();
+            }
+            else
+            {
+                yield return new WaitForSeconds(delayBetweenLevels);
+                startWave = true;
+            }
         }
 
     }

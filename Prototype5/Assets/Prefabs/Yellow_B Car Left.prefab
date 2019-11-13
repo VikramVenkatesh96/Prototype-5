@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  timeToExtinguish: 3
+  timeToExtinguish: 1
   extinguishedSprite: {fileID: 21300000, guid: 05cde453b0581f44f92df84dd0282b8b, type: 3}
   onFireSprite: {fileID: 619688709221532734, guid: 7a2cda4172974e147ba3622cf81b8259,
     type: 3}
