@@ -11,9 +11,13 @@ public class BurningToExtinguished : MonoBehaviour
     private static float countSavedVehicles = 0;
     private const float maxSavesPerLevel = 10;
     private bool switchLevel = false;
+    private AudioSource scoreAudio;
     Vehicle vehicleType;
 
-
+    private void Start()
+    {
+        scoreAudio = GameObject.Find("Audio/Score").GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Water")
@@ -60,6 +64,7 @@ public class BurningToExtinguished : MonoBehaviour
 
             // add score here for the corresponding vehicle
             Score = Score + gameObject.GetComponent<Vehicle>().vehicleScore;
+            scoreAudio.Play();
 
 
             isExtinguished = true;

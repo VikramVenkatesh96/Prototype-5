@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 7b686b063a9d05c4ebc51a93ff0e503b
+guid: 2515a0904f04b7b45b62f7f2123e1a6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9070072893300625656
-    second: FireSpriteSheet_OrangeBigRight (1)_0
+      213: -8223609693056525302
+    second: FireSpriteSheet_OrangeBigRight (1) 1_0
   - first:
-      213: 374628234138889351
-    second: FireSpriteSheet_OrangeBigRight (1)_1
+      213: 5198084665846505923
+    second: FireSpriteSheet_OrangeBigRight (1) 1_1
   - first:
-      213: 2804066986929872717
-    second: FireSpriteSheet_OrangeBigRight (1)_2
+      213: 7442266122755870054
+    second: FireSpriteSheet_OrangeBigRight (1) 1_2
   - first:
-      213: 7296955238490882598
-    second: FireSpriteSheet_OrangeBigRight (1)_3
-  - first:
-      213: 3708481355004839842
-    second: FireSpriteSheet_OrangeBigRight (1)_4
+      213: -7378401795896859209
+    second: FireSpriteSheet_OrangeBigRight (1) 1_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -97,149 +94,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireSpriteSheet_OrangeBigRight (1)_0
+      name: FireSpriteSheet_OrangeBigRight (1) 1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 460
-        height: 359
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1c7668a0b833e94a90f271d40c5b773
-      internalID: -9070072893300625656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireSpriteSheet_OrangeBigRight (1)_1
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 0
-        width: 446
-        height: 359
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 10, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 493fb2a0d08a7d6439cc2033a4ea61cd
-      internalID: 374628234138889351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireSpriteSheet_OrangeBigRight (1)_2
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 0
-        width: 452
-        height: 359
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75322482188277444aeb407d1d495284
-      internalID: 2804066986929872717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireSpriteSheet_OrangeBigRight (1)_3
-      rect:
-        serializedVersion: 2
-        x: 1382
+        x: 0
         y: 0
         width: 461
         height: 359
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dec40ae82feebd4eaf9e44720f64103
-      internalID: 7296955238490882598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireSpriteSheet_OrangeBigRight (1)_4
-      rect:
-        serializedVersion: 2
-        x: 1286
-        y: 144
-        width: 90
-        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +112,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e47bbf33e5d7b49b2c88625e09941c
-      internalID: 3708481355004839842
+      spriteID: aaf95d58c6a9492439e46be963a5041a
+      internalID: -8223609693056525302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpriteSheet_OrangeBigRight (1) 1_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 0
+        width: 461
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3eb5282079f4a4b8ef878e35ca6d11
+      internalID: 5198084665846505923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpriteSheet_OrangeBigRight (1) 1_2
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 461
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d33657ee3763a3428670fc34522c5f1
+      internalID: 7442266122755870054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpriteSheet_OrangeBigRight (1) 1_3
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 0
+        width: 461
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bda679e200aa4a468cbb78ebd20eede
+      internalID: -7378401795896859209
       vertices: []
       indices: 
       edges: []

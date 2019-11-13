@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: ef103e29eacd12b46919d1962a065a29
+guid: 2e65792299d48da40b9f6cf823570b2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8648649929935784838
-    second: FireSpriteSheet_YellowSmallLeft_0
+      213: -2339546358834928494
+    second: FireSpriteSheet_BlueSmallRight(1)_0
   - first:
-      213: -295788848489867811
-    second: FireSpriteSheet_YellowSmallLeft_1
+      213: -4381624162379812347
+    second: FireSpriteSheet_BlueSmallRight(1)_1
   - first:
-      213: 3133692427600102099
-    second: FireSpriteSheet_YellowSmallLeft_2
+      213: -5300373234692612607
+    second: FireSpriteSheet_BlueSmallRight(1)_2
   - first:
-      213: -5008186630095165111
-    second: FireSpriteSheet_YellowSmallLeft_3
+      213: 5822776669831737921
+    second: FireSpriteSheet_BlueSmallRight(1)_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -94,137 +94,89 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireSpriteSheet_YellowSmallLeft_0
+      name: FireSpriteSheet_BlueSmallRight(1)_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 365
-        height: 167
+        x: 0
+        y: 0
+        width: 377
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33f6e36b998776649a12acd2255ea833
-      internalID: -8648649929935784838
+      spriteID: ddfcbf5e341a04e4393177b616af1153
+      internalID: -2339546358834928494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireSpriteSheet_YellowSmallLeft_1
+      name: FireSpriteSheet_BlueSmallRight(1)_1
       rect:
         serializedVersion: 2
-        x: 373
-        y: 2
-        width: 365
-        height: 167
+        x: 377
+        y: 0
+        width: 377
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ac4ddb0b52af34b87f6488fa95e7c3
-      internalID: -295788848489867811
+      spriteID: 85d6abb9a766ee24babc20ba74d0eb38
+      internalID: -4381624162379812347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireSpriteSheet_YellowSmallLeft_2
+      name: FireSpriteSheet_BlueSmallRight(1)_2
       rect:
         serializedVersion: 2
-        x: 742
-        y: 2
-        width: 365
-        height: 167
+        x: 754
+        y: 0
+        width: 377
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334278fa043ad8f40b72e5c7314ba3e6
-      internalID: 3133692427600102099
+      spriteID: 30f8ee4e6b4e2b141ab351b9e4be845d
+      internalID: -5300373234692612607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireSpriteSheet_YellowSmallLeft_3
+      name: FireSpriteSheet_BlueSmallRight(1)_3
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 2
-        width: 365
-        height: 167
+        x: 1131
+        y: 0
+        width: 377
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81f6b43185784fa43a99857d41faa090
-      internalID: -5008186630095165111
+      spriteID: 3bd5ad2587e446d4494ca5679fb9795a
+      internalID: 5822776669831737921
       vertices: []
       indices: 
       edges: []
