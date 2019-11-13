@@ -8,6 +8,7 @@ public class WaterOnExtinguished : MonoBehaviour
     ObjectMovementLeft accelerationLeft;
     //to decelrate it in right direction decrease accelerationRight
     ObjectMovementRight accelerationRight;
+    //private Animator animator;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -27,6 +28,7 @@ public class WaterOnExtinguished : MonoBehaviour
         {
             Destroy(gameObject.transform.parent.gameObject);
             Destroy(collider.gameObject.transform.parent.gameObject);
+            //animator.Play("explosion");
         }
     }
 }
