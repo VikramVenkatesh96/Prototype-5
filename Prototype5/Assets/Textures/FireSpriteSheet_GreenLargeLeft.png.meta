@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37e92900b4a69964a99a45a0c493bd1b
+guid: 21b109e1ca36732418b1bb2fa0a05b9a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -94,54 +94,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -149,18 +101,18 @@ TextureImporter:
       name: FireSpriteSheet_GreenLargeLeft_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 383
-        height: 278
+        x: 0
+        y: 0
+        width: 391
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2bbf3f9d51c78845a0102c67a205151
+      spriteID: ed0a8f891d4e1984489e93d9f625bf4c
       internalID: -3640552460054241874
       vertices: []
       indices: 
@@ -170,18 +122,18 @@ TextureImporter:
       name: FireSpriteSheet_GreenLargeLeft_1
       rect:
         serializedVersion: 2
-        x: 396
-        y: 4
-        width: 383
-        height: 278
+        x: 391
+        y: 0
+        width: 391
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334aaed2f16aa1a448501779de5f7bcf
+      spriteID: 3c8507da36ae1bf41897db2b5ea57334
       internalID: -9205749276920817872
       vertices: []
       indices: 
@@ -191,18 +143,18 @@ TextureImporter:
       name: FireSpriteSheet_GreenLargeLeft_2
       rect:
         serializedVersion: 2
-        x: 786
-        y: 4
-        width: 383
-        height: 278
+        x: 782
+        y: 0
+        width: 391
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e01f760e98dd9324295c5cf21f89b2d2
+      spriteID: 9a90bc3683594a24998c41af14746d99
       internalID: 3898077057588999450
       vertices: []
       indices: 
@@ -212,18 +164,18 @@ TextureImporter:
       name: FireSpriteSheet_GreenLargeLeft_3
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 4
-        width: 383
-        height: 278
+        x: 1173
+        y: 0
+        width: 391
+        height: 287
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afdfbbcbc7098a64a8b3b2f4a364e0ad
+      spriteID: c563524c2641f014ab875baf385bc8bf
       internalID: 2590679568318144800
       vertices: []
       indices: 
