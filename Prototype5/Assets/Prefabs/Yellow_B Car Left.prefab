@@ -178,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   timeToExtinguish: 3
-  extinguishedSprite: {fileID: 21300000, guid: 591bd5ea000cd2e43a3dadbd6b062b14, type: 3}
-  onFireSprite: {fileID: -8648649929935784838, guid: ef103e29eacd12b46919d1962a065a29,
+  extinguishedSprite: {fileID: 21300000, guid: 05cde453b0581f44f92df84dd0282b8b, type: 3}
+  onFireSprite: {fileID: 619688709221532734, guid: 7a2cda4172974e147ba3622cf81b8259,
     type: 3}
   vehicleScore: 10
 --- !u!114 &7818280519608894262
