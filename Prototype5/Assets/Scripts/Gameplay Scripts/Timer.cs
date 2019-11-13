@@ -4,10 +4,11 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public float timerInSeconds;
-    [SerializeField]
-    private string timeString;
+    //[SerializeField]
+    public static string timeString;
     void Update()
     {
+        Time.timeScale = 1;
         timeString = (Mathf.Floor((timerInSeconds / 60.0f)).ToString()) + ":" + ((Mathf.Floor(timerInSeconds % 60.0f)).ToString("00"));
         timerInSeconds -= Time.deltaTime;
     }
