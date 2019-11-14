@@ -178,6 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c21eb73c0c162d41818fe1b2ea3ac71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isExtinguished: 0
+  feedback: {fileID: 7425457174783940962, guid: ac29bb6eb568af24cb2de7414ef6beb1,
+    type: 3}
+  feedbackSpawnPos: {x: 0, y: 0, z: 0}
 --- !u!95 &6784245748144607704
 Animator:
   serializedVersion: 3

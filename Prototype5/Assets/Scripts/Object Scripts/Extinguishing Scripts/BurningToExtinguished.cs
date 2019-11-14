@@ -7,17 +7,26 @@ public class BurningToExtinguished : MonoBehaviour
     public static int Score;
 
     bool isWater = false;
-    bool isExtinguished = false;
+    public bool isExtinguished = false;
     private static float countSavedVehicles = 0;
     private const float maxSavesPerLevel = 10;
     private bool switchLevel = false;
     private AudioSource scoreAudio;
     Vehicle vehicleType;
+    public GameObject feedback;
+    private float startTime;
+    private float feedbackMovingDist;
+    private Vector3 feedbackInitialPos;
+    private GameObject feedbackSpawner;
+    public Vector3 feedbackSpawnPos;
+    //public GameObject feedbackDestination;
 
     private void Start()
     {
         scoreAudio = GameObject.Find("Audio/Score").GetComponent<AudioSource>();
-    }
+
+       }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Water")
@@ -46,6 +55,7 @@ public class BurningToExtinguished : MonoBehaviour
         }
     }
 
+
     private void SpawnExtingusihedObject(GameObject burningObj)
     {
         if (gameObject.GetComponent<Vehicle>().timeToExtinguish <= 0f)
@@ -66,8 +76,10 @@ public class BurningToExtinguished : MonoBehaviour
             Score = Score + gameObject.GetComponent<Vehicle>().vehicleScore;
             scoreAudio.Play();
 
+            feedbackSpawner = Instantiate(feedback, gameObject.transform.position, Quaternion.identity) as GameObject;
 
             isExtinguished = true;
+
         }
         else {
             gameObject.GetComponent<Vehicle>().timeToExtinguish -= Time.deltaTime * 2.5f;

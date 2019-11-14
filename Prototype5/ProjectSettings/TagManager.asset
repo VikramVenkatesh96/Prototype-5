@@ -8,6 +8,7 @@ TagManager:
   - Burning
   - Extinguished
   - Water
+  - Test
   layers:
   - Default
   - TransparentFX
