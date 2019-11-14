@@ -9,7 +9,9 @@ public class BurningToExtinguished : MonoBehaviour
     bool isWater = false;
     public bool isExtinguished = false;
     private static float countSavedVehicles = 0;
-    private const float maxSavesPerLevel = 10;
+    private const float maxSavesPerLevel = 2;
+    private float maxThresholdSpeed = 10.0f;
+    private float waveSpeedIncrement = 2.0f;
     private bool switchLevel = false;
     private AudioSource scoreAudio;
     Vehicle vehicleType;
@@ -65,10 +67,24 @@ public class BurningToExtinguished : MonoBehaviour
             gameObject.tag = "Extinguished";
             gameObject.transform.parent.gameObject.tag = "Extinguished";
             countSavedVehicles++;
-            if (countSavedVehicles >= maxSavesPerLevel)
+            if (countSavedVehicles % maxSavesPerLevel == 0 && countSavedVehicles!=0)
             {
                 switchLevel = true;
                 Debug.Log("Level change: " + switchLevel);
+
+                //Increase speed of Cars per level if max threshold not reached
+                if (ObjectSpawner.initialSpeed.x < maxThresholdSpeed)
+                {
+                    if (gameObject.GetComponent<ObjectMovementLeft>())
+                    {
+                        ObjectSpawner.initialSpeed -= new Vector2(waveSpeedIncrement, 0);
+                    }
+                    else
+                    {
+                        ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
+                    }
+                }
+             
             }
 
             // add score here for the corresponding vehicle
@@ -84,5 +100,9 @@ public class BurningToExtinguished : MonoBehaviour
             gameObject.GetComponent<Vehicle>().timeToExtinguish -= Time.deltaTime * 2.5f;
         }
 
+    }
+    //Getter for countSavedVehicles
+    public float GetCountSavedVehicles() {
+        return countSavedVehicles;
     }
 }

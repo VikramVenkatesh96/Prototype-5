@@ -5,10 +5,10 @@ using UnityEngine;
 public class ObjectMovementLeft : MonoBehaviour
 {
 
-    public Vector2 initialSpeed;
     private Rigidbody2D obj;
     private Vector2 screenBounds;
     float t;
+    //static float speed;
     public Vector2 acceleration;
 
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class ObjectMovementLeft : MonoBehaviour
     {
 
         obj = this.GetComponent<Rigidbody2D>();
-
+        //initialSpeed = new Vector2(s, 0.0f);
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
@@ -25,7 +25,7 @@ public class ObjectMovementLeft : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        obj.velocity = initialSpeed + acceleration * t;
+        obj.velocity = -(ObjectSpawner.initialSpeed) + acceleration * t;
 
         if (obj.velocity.x > 0)
         {

@@ -13,10 +13,12 @@ public class ObjectSpawner : MonoBehaviour
     public float delayBetweenLevels;
     public bool startWave = true;
     private Vector2 screenBounds;
+    public static float spawnCount = 0;
+    public static Vector2 initialSpeed = new Vector2(4.0f, 0.0f);
 
-    // Start is called before the first frame update
     void Start()
     {
+        
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
         StartCoroutine(objectsRToLWave());
@@ -31,6 +33,7 @@ public class ObjectSpawner : MonoBehaviour
         //select a random gameobject to spawn
         GameObject objectToSpawn = objectsRightToLeft[Random.Range(0, objectsRightToLeft.Count)];
         objectToSpawn = Instantiate(objectToSpawn) as GameObject;
+        spawnCount++;
 
         //spawn the object on the right side 
         //int chosenSpawnPoint = Random.Range(0, spawnPos.Count);
@@ -42,14 +45,16 @@ public class ObjectSpawner : MonoBehaviour
         //select a random gameobject to spawn
         GameObject objectToSpawn = objectsLeftToRight[Random.Range(0, objectsLeftToRight.Count)];
         objectToSpawn = Instantiate(objectToSpawn) as GameObject;
-
+        spawnCount++;
+        Debug.Log(objectToSpawn.transform.GetChild(0).GetComponent<Rigidbody2D>().velocity);
         //spawn the object on the left side 
         objectToSpawn.transform.position = new Vector2(spawnPos[1].transform.position.x, spawnPos[1].transform.position.y);
     }
 
     IEnumerator objectsRToLWave()
     {
-        while(true)
+        Debug.Log("getting here");
+        while (true)
         {
             if(startWave)
             {

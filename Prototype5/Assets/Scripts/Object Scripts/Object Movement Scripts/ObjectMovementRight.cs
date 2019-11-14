@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectMovementRight : MonoBehaviour
 {
-    public Vector2 initialSpeed;
+
     private Rigidbody2D obj;
     private Vector2 screenBounds;
     float t;
@@ -14,7 +14,7 @@ public class ObjectMovementRight : MonoBehaviour
     void Start()
     {
         obj = this.GetComponent<Rigidbody2D>();
-
+        
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         //Debug.Log("Transform position x: " + transform.position.x);
     }
@@ -24,7 +24,7 @@ public class ObjectMovementRight : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        obj.velocity = initialSpeed + acceleration * t;
+        obj.velocity = ObjectSpawner.initialSpeed + acceleration * t;
 
         if (obj.velocity.x < 0)
         {

@@ -595,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: {fileID: 30892553}
+  timer: {fileID: 2138243876}
 --- !u!1 &658262922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +1972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da9e69121e247f4fa747c65b04df69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerInSeconds: 120
+  timerInSeconds: 10
 --- !u!1001 &2140621074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2313,6 +2314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202752660861715073, guid: 995133ca70b08bf409a32ef521c21c62,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 995133ca70b08bf409a32ef521c21c62, type: 3}
