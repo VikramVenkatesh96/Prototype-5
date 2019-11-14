@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
         if (decrementTimer <= 0) {
             timeString = "Finish";
             isGameOver = true;
+            Time.timeScale = 0;
         }
     }
     public string GetTime()

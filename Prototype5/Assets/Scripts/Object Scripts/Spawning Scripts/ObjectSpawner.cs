@@ -11,10 +11,11 @@ public class ObjectSpawner : MonoBehaviour
     public List<GameObject> spawnPos;
     public float respawnTime;
     public float delayBetweenLevels;
-    public bool startWave = true;
+    public static bool startWave = true;
     private Vector2 screenBounds;
     public static float spawnCount = 0;
     public static Vector2 initialSpeed = new Vector2(4.0f, 0.0f);
+    Timer gameOver;
 
     void Start()
     {

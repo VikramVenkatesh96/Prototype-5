@@ -21,11 +21,14 @@ public class BurningToExtinguished : MonoBehaviour
     private Vector3 feedbackInitialPos;
     private GameObject feedbackSpawner;
     public Vector3 feedbackSpawnPos;
+    private AudioSource levelChangeAudio;
+    //ObjectSpawner vehicleWave;
     //public GameObject feedbackDestination;
 
     private void Start()
     {
         scoreAudio = GameObject.Find("Audio/Score").GetComponent<AudioSource>();
+        levelChangeAudio = GameObject.Find("Audio/LevelChange").GetComponent<AudioSource>();
 
     }
 
@@ -75,6 +78,8 @@ public class BurningToExtinguished : MonoBehaviour
                 //Increase speed of Cars per level if max threshold not reached
                 if (ObjectSpawner.initialSpeed.x < maxThresholdSpeed)
                 {
+                    ObjectSpawner.startWave = false;
+                    levelChangeAudio.Play();
                     if (gameObject.GetComponent<ObjectMovementLeft>())
                     {
                         ObjectSpawner.initialSpeed -= new Vector2(waveSpeedIncrement, 0);
@@ -84,6 +89,7 @@ public class BurningToExtinguished : MonoBehaviour
                         ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
                     }
                 }
+                countSavedVehicles = 0;
              
             }
 
