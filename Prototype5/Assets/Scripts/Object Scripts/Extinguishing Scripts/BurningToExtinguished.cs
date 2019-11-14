@@ -82,13 +82,13 @@ public class BurningToExtinguished : MonoBehaviour
                     levelChangeAudio.Play();
                     if (gameObject.GetComponent<ObjectMovementLeft>())
                     {
-                        ObjectSpawner.initialSpeed -= new Vector2(waveSpeedIncrement, 0);
-                        //Debug.Log("Left speed: " + ObjectSpawner.initialSpeed);
+                        ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
+                        Debug.Log("Left speed: " + ObjectSpawner.initialSpeed);
                     }
                     else
                     {
                         ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
-                        //Debug.Log("Right speed: " + ObjectSpawner.initialSpeed);
+                        Debug.Log("Right speed: " + ObjectSpawner.initialSpeed);
                     }
                 }
                 //countSavedVehicles = 0;
