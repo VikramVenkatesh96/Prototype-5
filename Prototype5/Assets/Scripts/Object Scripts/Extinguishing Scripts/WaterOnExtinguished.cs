@@ -8,7 +8,12 @@ public class WaterOnExtinguished : MonoBehaviour
     ObjectMovementLeft accelerationLeft;
     //to decelrate it in right direction decrease accelerationRight
     ObjectMovementRight accelerationRight;
-    //private Animator animator;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator =GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -26,9 +31,10 @@ public class WaterOnExtinguished : MonoBehaviour
 
         if (collider.gameObject.tag == "Extinguished" || collider.gameObject.tag == "Burning")
         {
-            Destroy(gameObject.transform.parent.gameObject);
+            Debug.Log("collide");
+            animator.SetBool("collide", true);
+            //Destroy(gameObject.transform.parent.gameObject);
             Destroy(collider.gameObject.transform.parent.gameObject);
-            //animator.Play("explosion");
         }
     }
 }

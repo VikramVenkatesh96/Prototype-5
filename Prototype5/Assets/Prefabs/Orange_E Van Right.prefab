@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1672288819723797303}
   - component: {fileID: 3314434691762052848}
   - component: {fileID: 4536343109777641452}
+  - component: {fileID: 721073721709603371}
   m_Layer: 0
   m_Name: orange_Big_Right (1)
   m_TagString: Extinguished
@@ -207,3 +208,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a381a83a0dbd904db12cd9108e7d19c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &721073721709603371
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504511925838302968}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53538f76e9a229d4c8aee8430c5b54c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
