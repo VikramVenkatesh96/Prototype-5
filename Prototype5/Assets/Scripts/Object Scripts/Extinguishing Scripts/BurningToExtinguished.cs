@@ -8,7 +8,7 @@ public class BurningToExtinguished : MonoBehaviour
 
     bool isWater = false;
     public bool isExtinguished = false;
-    private static float countSavedVehicles = 0;
+    public static float countSavedVehicles = 0;
     private const float maxSavesPerLevel = 2;
     private float maxThresholdSpeed = 10.0f;
     private float waveSpeedIncrement = 2.0f;

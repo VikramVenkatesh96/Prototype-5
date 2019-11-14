@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     }
     void Update()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         timeString = (Mathf.Floor((decrementTimer / 60.0f)).ToString()) + ":" + ((Mathf.Floor(decrementTimer % 60.0f)).ToString("00"));
         //if (vehicleWave.startWave)
         // {

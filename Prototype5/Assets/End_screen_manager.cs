@@ -11,6 +11,8 @@ public class End_screen_manager : MonoBehaviour
     public Button Store;
     public Button Retry;
 
+    public Timer Timer_obj;
+
     public static bool show_menu;
 
     void Start()
@@ -27,10 +29,15 @@ public class End_screen_manager : MonoBehaviour
 
     void Update()
     {
+        if(Timer_obj.IsGameOver() == true)
+        {
+            show_menu = true;
+            Time.timeScale = 0;
+        }
         Show_menu();
-        Score.text = Score_manager.Present_score.ToString();
-        Highscore.text = PlayerPrefs.GetInt("Highscore").ToString();
-        No_saved.text = BurningToExtinguished.countSavedVehicles.ToString(); 
+        Score.text = "Score :       " + Score_manager.Present_score.ToString();
+        Highscore.text = "Highscore :   " + PlayerPrefs.GetInt("Highscore").ToString();
+        No_saved.text = "Saved Cars :   " + BurningToExtinguished.countSavedVehicles.ToString(); 
     }
 
     public void Store_button()
@@ -54,7 +61,7 @@ public class End_screen_manager : MonoBehaviour
     {
 
         show_menu = false;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Startpage");
         Debug.Log("Scene reloaded");
     }
 
@@ -72,6 +79,7 @@ public class End_screen_manager : MonoBehaviour
         }
         else if (show_menu == true)
         {
+            Time.timeScale = 0;
             Score.gameObject.SetActive(true);
             Highscore.gameObject.SetActive(true);
             No_saved.gameObject.SetActive(true);
