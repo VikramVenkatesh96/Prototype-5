@@ -9,7 +9,7 @@ public class BurningToExtinguished : MonoBehaviour
     bool isWater = false;
     public bool isExtinguished = false;
     public static float countSavedVehicles = 0;
-    public static float maxSavesPerLevel = 5;
+    public static float maxSavesPerLevel = 2;
     private float maxThresholdSpeed = 10.0f;
     private float waveSpeedIncrement = 2.0f;
     private bool switchLevel = false;
@@ -76,18 +76,18 @@ public class BurningToExtinguished : MonoBehaviour
                 Debug.Log("Level change: " + switchLevel);
 
                 //Increase speed of Cars per level if max threshold not reached
-                if (ObjectSpawner.initialSpeed.x < maxThresholdSpeed)
+                if (Mathf.Abs(ObjectSpawner.initialSpeed.x) < maxThresholdSpeed)
                 {
                     ObjectSpawner.startWave = false;
                     levelChangeAudio.Play();
                     if (gameObject.GetComponent<ObjectMovementLeft>())
                     {
-                        ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
+                        ObjectSpawner.initialSpeed -= new Vector2(waveSpeedIncrement, 0);
                         //Debug.Log("Left speed: " + ObjectSpawner.initialSpeed);
                     }
                     else
                     {
-                        ObjectSpawner.initialSpeed -= new Vector2(waveSpeedIncrement, 0);
+                        ObjectSpawner.initialSpeed += new Vector2(waveSpeedIncrement, 0);
                         //Debug.Log("Right speed: " + ObjectSpawner.initialSpeed);
                     }
                 }
