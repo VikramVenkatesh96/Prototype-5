@@ -71,7 +71,6 @@ public class BurningToExtinguished : MonoBehaviour
                 Debug.Log("Level change: " + switchLevel);
             }
 
-
             // add score here for the corresponding vehicle
             Score = Score + gameObject.GetComponent<Vehicle>().vehicleScore;
             scoreAudio.Play();

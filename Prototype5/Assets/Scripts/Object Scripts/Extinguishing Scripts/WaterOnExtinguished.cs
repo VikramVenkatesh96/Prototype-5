@@ -8,8 +8,9 @@ public class WaterOnExtinguished : MonoBehaviour
     ObjectMovementLeft accelerationLeft;
     //to decelrate it in right direction decrease accelerationRight
     ObjectMovementRight accelerationRight;
-    //public GameObject explosion;
+    public GameObject explosion;
     private Animator animator;
+    private GameObject explosionSpawner;
 
     private void Start()
     {
@@ -37,21 +38,31 @@ public class WaterOnExtinguished : MonoBehaviour
             //instread of setting the extnguished prefab's animator.setBool to true, make an explosion prefab and set its animator.SetBool to true right here
             //(destroy) the explosion prefab after a few seconds. Something like this:
             //
-            //explosion.GetComponent<Animator>().SetBool("collide", true);
-            //Destroy(gameObject.transform.parent.gameObject);
+            if (collider.gameObject.tag == "Extinguished")
+            {
+                if (explosion != null)
+                {
+                    if (collider.gameObject.GetComponent<WaterOnExtinguished>() != null)
+                        collider.gameObject.GetComponent<WaterOnExtinguished>().explosion = null;
 
-            //StartCoroutine(DestroyExplosion());
+                    explosionSpawner = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+                    //collider.gameObject.GetComponent<Animator>().SetBool("collide", false);
+                    //explosionSpawner.transform.GetChild(0).GetComponent<Animator>().SetBool("collide", true);
 
-            animator.SetBool("collide", true);
-            //Destroy(gameObject.transform.parent.gameObject);
-            Destroy(collider.gameObject.transform.parent.gameObject);
+                    Destroy(gameObject.transform.parent.gameObject);
+                    Destroy(collider.gameObject.transform.parent.gameObject);
+                }
+            }
+            else
+            {
+                explosionSpawner = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+                //collider.gameObject.GetComponent<Animator>().SetBool("collide", false);
+                //explosionSpawner.transform.GetChild(0).GetComponent<Animator>().SetBool("collide", true);
+
+                Destroy(gameObject.transform.parent.gameObject);
+                Destroy(collider.gameObject.transform.parent.gameObject);
+            }
+            
         }
     }
-
-    //IEnumerator DestroyExplosion()
-    //{
-    //    yield return new WaitForSeconds(2f);
-    //    Destroy(explosion);
-
-    //}
 }
