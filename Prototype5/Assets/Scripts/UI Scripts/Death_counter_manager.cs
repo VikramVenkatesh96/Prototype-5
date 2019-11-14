@@ -13,9 +13,18 @@ public class Death_counter_manager : MonoBehaviour
 
     private float Bar_controler;
 
+    public static bool Game_ended;
+
+    public Timer timer_string;
+
     void Start()
     {
-        Death_bar_filler_image.fillAmount = 0.0f;
+        Death_bar_filler_image.fillAmount = 0;
+
+        Time.timeScale = 1;
+
+        Game_ended = false;
+
         Bar_controler = 0.1f;
 
         Fill_amount = 0.1f;
@@ -27,22 +36,56 @@ public class Death_counter_manager : MonoBehaviour
 
     void Update()
     {
-        Death_count_manager_script();
+        //Death_count_manager_script();
+
+        saved_vehicles_count_for_bar();
+
+        Show_menu_if_bar_filled();
+
+        //Pause_game();
 
         All_degug_here();
+    }
+
+
+    void saved_vehicles_count_for_bar()
+    {
+        Death_bar_filler_image.fillAmount = BurningToExtinguished.countSavedVehicles* Bar_controler;
+    }
+
+    void Show_menu_if_bar_filled()
+    {
+        if(Death_bar_filler_image.fillAmount >= 1)
+        {
+            End_screen_manager.show_menu = true;
+            Time.timeScale = 0;
+            Debug.Log(Time.timeScale);
+        }
+    }
+
+    void Pause_game()
+    {
+        if(timer_string.GetTime() == "0:00")
+        {
+            End_screen_manager.show_menu = true;
+            Time.timeScale = 0;
+        }
     }
 
     //inputs for temporary usage
     void Death_count_manager_script()
     {
 
-        Death_bar_filler_image.fillAmount = BurningObjectCounter.objMissedCount * Bar_controler;
+        //Debug.Log(Death_bar_filler_image.fillAmount);
 
-        if(Death_bar_filler_image.fillAmount >= 1)
+        if (Death_bar_filler_image.fillAmount == 1)
         {
             Death_counter_filled_text.gameObject.SetActive(true);
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
+            Game_ended = true;
         }
+
+        Death_bar_filler_image.fillAmount = BurningObjectCounter.objMissedCount * Bar_controler * 5;
 
         /*if (Input.GetKeyDown(KeyCode.U))
         {

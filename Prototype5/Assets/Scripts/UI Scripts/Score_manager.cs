@@ -7,8 +7,10 @@ public class Score_manager : MonoBehaviour
     private Text Score;
     private Text Highscore;
 
+
+
     // Int Values to store present score and highscore to show in UI
-    private int Present_score= 0;
+    public static int Present_score= 0;
     //private int High_score = 0;
 
     void Start()
