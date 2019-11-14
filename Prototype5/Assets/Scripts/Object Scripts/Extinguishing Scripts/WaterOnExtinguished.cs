@@ -11,10 +11,12 @@ public class WaterOnExtinguished : MonoBehaviour
     public GameObject explosion;
     private Animator animator;
     private GameObject explosionSpawner;
+    private AudioSource explosionAudio;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        explosionAudio = GameObject.Find("Audio/ExplosionSound").GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -46,8 +48,7 @@ public class WaterOnExtinguished : MonoBehaviour
                         collider.gameObject.GetComponent<WaterOnExtinguished>().explosion = null;
 
                     explosionSpawner = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
-                    //collider.gameObject.GetComponent<Animator>().SetBool("collide", false);
-                    //explosionSpawner.transform.GetChild(0).GetComponent<Animator>().SetBool("collide", true);
+                    explosionAudio.Play();
 
                     Destroy(gameObject.transform.parent.gameObject);
                     Destroy(collider.gameObject.transform.parent.gameObject);
@@ -56,8 +57,7 @@ public class WaterOnExtinguished : MonoBehaviour
             else
             {
                 explosionSpawner = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
-                //collider.gameObject.GetComponent<Animator>().SetBool("collide", false);
-                //explosionSpawner.transform.GetChild(0).GetComponent<Animator>().SetBool("collide", true);
+                explosionAudio.Play();
 
                 Destroy(gameObject.transform.parent.gameObject);
                 Destroy(collider.gameObject.transform.parent.gameObject);

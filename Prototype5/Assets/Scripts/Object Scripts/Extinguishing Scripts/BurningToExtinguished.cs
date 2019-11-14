@@ -25,7 +25,7 @@ public class BurningToExtinguished : MonoBehaviour
     {
         scoreAudio = GameObject.Find("Audio/Score").GetComponent<AudioSource>();
 
-       }
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
