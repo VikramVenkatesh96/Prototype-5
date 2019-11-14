@@ -1449,6 +1449,7 @@ MonoBehaviour:
   - {fileID: 1265412241}
   respawnTime: 3
   delayBetweenLevels: 8
+  gameOver: {fileID: 2138243876}
 --- !u!1001 &7202752661991644084
 PrefabInstance:
   m_ObjectHideFlags: 0

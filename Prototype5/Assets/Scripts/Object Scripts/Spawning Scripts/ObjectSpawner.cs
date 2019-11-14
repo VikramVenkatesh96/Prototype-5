@@ -15,7 +15,7 @@ public class ObjectSpawner : MonoBehaviour
     private Vector2 screenBounds;
     public static float spawnCount = 0;
     public static Vector2 initialSpeed = new Vector2(4.0f, 0.0f);
-    Timer gameOver;
+    public Timer gameOver;
 
     void Start()
     {
@@ -47,7 +47,7 @@ public class ObjectSpawner : MonoBehaviour
         GameObject objectToSpawn = objectsLeftToRight[Random.Range(0, objectsLeftToRight.Count)];
         objectToSpawn = Instantiate(objectToSpawn) as GameObject;
         spawnCount++;
-        Debug.Log(objectToSpawn.transform.GetChild(0).GetComponent<Rigidbody2D>().velocity);
+        //Debug.Log(objectToSpawn.transform.GetChild(0).GetComponent<Rigidbody2D>().velocity);
         //spawn the object on the left side 
         objectToSpawn.transform.position = new Vector2(spawnPos[1].transform.position.x, spawnPos[1].transform.position.y);
     }
@@ -57,15 +57,19 @@ public class ObjectSpawner : MonoBehaviour
         Debug.Log("getting here");
         while (true)
         {
-            if(startWave)
+            if(startWave && (gameOver.IsGameOver()  != true))
             {
                 yield return new WaitForSeconds(respawnTime);
                 spawnObjectsRightToLeft();
             }
-            else
+            else if (!startWave && (gameOver.IsGameOver() != true))
             {
                 yield return new WaitForSeconds(delayBetweenLevels);
                 startWave = true;
+            }
+            else if (gameOver.IsGameOver() == true)
+            {
+                break;
             }
             
         }
@@ -84,16 +88,21 @@ public class ObjectSpawner : MonoBehaviour
     {
         while (true)
         {
-            if (startWave)
+            if (startWave && (gameOver.IsGameOver() != true))
             {
                 yield return new WaitForSeconds(respawnTime);
                 spawnObjectsLeftToRight();
             }
-            else
+            else if (!startWave && (gameOver.IsGameOver() != true))
             {
                 yield return new WaitForSeconds(delayBetweenLevels);
                 startWave = true;
             }
+            else if (gameOver.IsGameOver() == true)
+            {
+                break;
+            }
+
         }
 
     }

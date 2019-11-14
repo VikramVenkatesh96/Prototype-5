@@ -25,7 +25,7 @@ public class Death_counter_manager : MonoBehaviour
 
         Game_ended = false;
 
-        Bar_controler = 0.1f;
+        Bar_controler = 1 / BurningToExtinguished.maxSavesPerLevel;
 
         Fill_amount = 0.1f;
         Fill_incrementor = 0.1f;
@@ -50,7 +50,13 @@ public class Death_counter_manager : MonoBehaviour
 
     void saved_vehicles_count_for_bar()
     {
-        Death_bar_filler_image.fillAmount = BurningToExtinguished.countSavedVehicles* Bar_controler;
+        //Debug.Log("saved vehicles: " + BurningToExtinguished.countSavedVehicles);
+        if (Death_bar_filler_image.fillAmount == 1)
+        {
+            Death_bar_filler_image.fillAmount = 0;
+        }
+        Death_bar_filler_image.fillAmount = (BurningToExtinguished.countSavedVehicles % BurningToExtinguished.maxSavesPerLevel) * Bar_controler;
+        
     }
 
     void Show_menu_if_bar_filled()
